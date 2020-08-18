@@ -8,13 +8,14 @@
 
 /*
 
-let userName = prompt("Masukkan Nama User");
-let userCity = prompt("Masukkan Asal Negara");
-let userCheck = confirm("Apakah data yang diisi sudah benar ? ");
-if (userCheck == true) {
-  alert("Terima kasih sudah mengisi form");
+let userName = String(prompt(" Sebutkan Nama Anda !"));
+let userCity = String(prompt("Sebutkan Asal Negara !"));
+if(!Number(userName) && !Number(userCity)) {
+    confirm("Apakah data yang diisi sudah benar?");
+    alert("Terima kasih sudah mengisi form");
 } else {
-  alert("Anda membatalkan pengisian");
+   alert("Nama atau Negara tidak sesuai dengan karakter");
 }
+
 
 */
